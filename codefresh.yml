@@ -12,7 +12,7 @@ steps:
     type: build
     description: codefresh example
     image-name: codefreshexamples/express-angular-mongo
-    dockerfile: Dockerfile
+    dockerfile: DockerfileEAM
     tag: latest
 
 #  push-to-dockerhub:
