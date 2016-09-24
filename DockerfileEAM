@@ -1,6 +1,6 @@
 FROM davidsblog/node-mongo:latest
 #определяем каталог
-RUN mkdir -p /usr/src/app
+RUN mkdir -p express-angular-mongo-master/usr/src/app
 #должен быть определен путь к каталогу, отсюда будут выполняться все комманды
 WORKDIR express-angular-mongo-master/usr/src/app
 
