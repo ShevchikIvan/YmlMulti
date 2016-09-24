@@ -2,18 +2,18 @@ FROM davidsblog/node-mongo:latest
 #определяем каталог
 RUN mkdir -p /usr/src/app
 #должен быть определен путь к каталогу, отсюда будут выполняться все комманды
-WORKDIR /usr/src/app
+WORKDIR express-angular-mongo-master/usr/src/app
 
 #добавляем в наш каталог package.json
-ADD ./package.json /usr/src/app/package.json
+ADD ./package.json express-angular-mongo-master/usr/src/app/package.json
 #устанавливаем пакет для работы с js
 RUN npm install
 
 
 #переносим все наши сорцы в наш каталог
-ADD . /usr/src/app
+ADD . express-angular-mongo-master/usr/src/app
 
 #добавляем 
-ADD start.sh /usr/src/app/start.sh
-RUN chmod +x /usr/src/app/start.sh
-CMD "/usr/src/app/start.sh"
+ADD start.sh express-angular-mongo-master/usr/src/app/start.sh
+RUN chmod +x express-angular-mongo-master/usr/src/app/start.sh
+CMD "express-angular-mongo-master/usr/src/app/start.sh"
