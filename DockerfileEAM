@@ -5,7 +5,7 @@ RUN mkdir -p express-angular-mongo-master/usr/src/app
 WORKDIR express-angular-mongo-master/usr/src/app
 
 #добавляем в наш каталог package.json
-ADD ./package.json express-angular-mongo-master/usr/src/app/package.json
+ADD express-angular-mongo-master/package.json express-angular-mongo-master/usr/src/app/package.json
 #устанавливаем пакет для работы с js
 RUN npm install
 
